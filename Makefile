@@ -145,6 +145,9 @@ rebuild-importer-tests-compressed-files:
 rebuild-city-codes:
 	export LBB_ENV=development && cd $(PACKAGE_DIR) && python importer/scripts/clean_csv_city_codes.py
 
+nb-hirings-per-company-per-rome:
+	export LBB_ENV=development && cd $(PACKAGE_DIR) && python scripts/nb_hirings_per_company_per_rome.py
+
 # Load testing
 # ------------
 
